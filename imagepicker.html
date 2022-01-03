@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image picker</title>
+    <style>
+        .pict{
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>IMAGE PICKER</h1>
+    <select id="selectOne" onchange="myImage()">
+    <option value="ayam">Ayam</option>
+    <option value="domba">Gajah</option>
+    <option value="gorila">Gorila</option>
+    <option value="kucing">Kucing</option>
+    <option value="kuda">Harimau</option>
+    <option value="landak">Ikan Cupang</option>
+    </select>
+    <div id="demo"></div>
+
+    <script>
+        function myImage() {
+            var x = document.getElementById("selectOne").value;
+
+            if (x == "Ayam") {
+                Badak = document.getElementById("demo").innerHTML = '<img class="pict" src="ayam.jpg">'
+                window.alert("ini gambar " + x);
+            }
+            if (x == "Gajah") {
+                Beruang = document.getElementById("demo").innerHTML = '<img class="pict" src="gajah.jpg">'
+                window.alert("ini gambar " + x);
+            }
+            if (x == "Gorila") {
+                Komodo = document.getElementById("demo").innerHTML = '<img class="pict" src="gorilla.jpg">'
+                window.alert("ini gambar " + x);
+            }
+            if (x == "Kucing") {
+                Merak = document.getElementById("demo").innerHTML = '<img class="pict" src="Kucing-Domestik-1.jpg">'
+                window.alert("ini gambar " + x);
+            }
+            if (x == "Harimau") {
+                Panda = document.getElementById("demo").innerHTML = '<img class="pict" src="harimau.jpg">'
+                window.alert("ini gambar " + x);
+            }
+            if (x == "Ikan Cupang") {
+                Platipus = document.getElementById("demo").innerHTML = '<img class="pict" src="ikan cupang.jpg">'
+                window.alert("ini gambar " + x);
+            }
+        }
+    </script>
+</body>
+</html>
